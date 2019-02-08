@@ -18,7 +18,7 @@
 {
   NSURL *jsCodeLocation;
   
-  [GeoSpark intialize:@"d551859bab7acd915e2b5911cd2c0727645dae9adc0caaf913bb2d464678adf5"];
+  [GeoSpark intialize:@"publishableKey"];
   GeoSpark.delegate = self;
   
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
