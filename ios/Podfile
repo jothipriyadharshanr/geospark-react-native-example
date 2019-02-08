@@ -1,12 +1,13 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '10.0'
+# platform :ios, '11.0'
 
-target 'TestExample' do
+target 'mymodule' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-   pod 'GeoSpark'	
-  # Pods for TestExample
-
- 
-
+  pod 'GeoSpark'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'RCTLinkingIOS',
+  ]
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  # Pods for mymodule
 end
